@@ -1,0 +1,47 @@
+/* 
+* @keyframes (nama) {
+*    from / 0% {
+*        (property css)
+*    }
+*    to / 100% {
+*        (property css)
+*    }
+* }
+*/
+
+/* 
+? animation : (name) (duration) <timing-function> <delay> <iteration-count> <direction> <fill-mode> <play-state>; 
+            ! iteration-count   --> angka / infinite
+            ! direction         --> normal / reverse / alternate / alternate-reverse
+            ! fill-mode         --> none / forward / backward / both
+            ! play-state        --> running / paused
+*/
+.kotak {
+    background-color: salmon;
+    width: 300px;
+    height: 300px;
+}
+
+.kotak:hover {
+    animation: kotakGerak 3s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+}
+
+@keyframes kotakGerak {
+    0% {
+        width: 300px;
+    }
+
+    50% {
+        width: 600px;
+        height: 300px;
+    }
+
+    100% {
+        width: 600px;
+        height: 800px;
+    }
+}

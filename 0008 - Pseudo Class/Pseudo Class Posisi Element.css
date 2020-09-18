@@ -1,0 +1,28 @@
+li:first-child a {
+    color: green;
+}
+
+li:last-child a {
+    color: rgb(255, 0, 0);
+}
+
+li:nth-child(3n) a {
+    color: rgb(255, 0, 221);
+}
+
+li:hover a {
+    font-size: large;
+    color: tomato;
+}
+
+p:first-of-type {
+    background-color: blue;
+}
+
+p:nth-last-of-type(3) {
+    background-color: violet;
+}
+
+p:last-of-type {
+    background-color: yellow;
+}

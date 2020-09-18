@@ -1,0 +1,49 @@
+/* 
+! Scale tidak mempengaruhi element ssekitarnya dan menggunakan akselerasi hardware seperti filter
+* transform :   (target);
+                ? scale (angka) --> memperbesar / memperkecil
+                ? rotate (deg) --> (memutar)
+                ? skew (deg) --> (membuat condong atau miring)
+                ? translate (px) --> (mengubah posisi)
+*/
+.kotak {
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    display: inline-block;
+    text-align: center;
+    transition: 1s;
+}
+
+.kotak.kotak1 {
+    background-color: aqua;
+}
+
+.kotak.kotak1:hover {
+    transform: scale(2);
+}
+
+.kotak.kotak2 {
+    background-color: red;
+}
+
+.kotak.kotak2:hover {
+    transform: rotateY(90deg) rotate(75deg);
+
+}
+
+.kotak.kotak3 {
+    background-color: green;
+}
+
+.kotak.kotak3:hover {
+    transform: skewY(45deg);
+}
+
+.kotak.kotak4 {
+    background-color: violet;
+}
+
+.kotak.kotak4:hover {
+    transform: translateX(100px) translateY(200px);
+}

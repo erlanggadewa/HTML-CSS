@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(38, 139, 255);
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    border-bottom: 7px solid salmon;
+}
+
+div.container {
+    width: 900px;
+    background-color: whitesmoke;
+    margin: 70px auto 20px;
+
+}
+
+div.container div.header {
+    padding: 20px;
+    position: relative;
+}
+
+div.container div.header div.twitter a img {
+    width: 250px;
+    position: absolute;
+    top: -29px;
+    right: -34px;
+}
+
+div.container div.header h1 {
+    font-size: 50px;
+    user-select: none;
+}
+
+div.container div.header ul {
+    list-style: none;
+
+}
+
+div.container div.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+div.container div.header ul li a {
+    text-decoration: none;
+    color: salmon;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.container div.header ul li a:hover {
+    text-decoration: none;
+    color: salmon;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding: 7px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+div.container div.gambar {
+    background-image: url(computer.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position-y: -70px;
+    border-top: 3px solid salmon;
+    border-bottom: 3px solid rgb(62, 62, 255);
+}
+
+div.container div.main {
+    padding: 20px;
+    width: 900px;
+}
+
+div.container div.main div.left-side {
+    width: 580px;
+    float: left;
+    padding: 10px;
+
+}
+
+div.container div.main div.left-side div.left-content-header h1 {
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+div.container div.main div.left-side div.left-content-header p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+div.container div.main div.left-side div.left-content-header p a {
+    text-decoration: none;
+}
+
+div.container div.main div.left-side div.left-content-main p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+div.container div.main div.right-side {
+    width: 280px;
+    float: right;
+    padding: 10px;
+}
+
+div.container div.main div.right-side div.right-content-header img {
+    width: 100px;
+    float: left;
+    margin: 10px 10px 10px 0px;
+}
+
+div.container div.main div.right-side div.right-content-header p {
+    margin-top: 10px;
+}
+
+div.container div.footer div.copyright {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(22, 19, 19);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}

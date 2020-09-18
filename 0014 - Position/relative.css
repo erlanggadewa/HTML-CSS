@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.kiri {
+    /* tidak memerlukan height karena positioning tidak meruntuhkan induk (out-flow) 
+    berbeda dengan float yang meruntuhkan induk (out-flow) */
+    width: 250px;
+    border: 7px solid black;
+}
+
+div.judul {
+    /* lebar berdasarkan kata per kata */
+    width: min-content;
+    /* background-color: grey; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.pertama h1 {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    /* mengubah position menjadi relative (non-static),
+    bergerak relatif terhadap posisi semualnya 
+     dan rung yang ditempati element terebut masih dianggap ada */
+    position: relative;
+    /* menjauhi aatas sejauh 50px dan menjauhi kiri 40px, 
+    dan tidak mempengaruhi element sekitar
+    hanya dapat berjalan jika posistion non-static 
+    dan bergerak relatif terhadap posisi semualnya*/
+    top: 50px;
+    left: 40px;
+    /* --------------------------------------------- */
+}
+
+div.kedua h1 {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    /* mengubah position menjadi relative (non-static),
+    bergerak relatif terhadap posisi semualnya 
+     dan rung yang ditempati element terebut masih dianggap ada */
+    position: relative;
+    /* walaupun semua position relative , 
+    margin tetap mempengaruhi sekitar, gunakan top, left, right, bottom 
+    untuk menggeser tanpa mengganggu yang lain */
+    margin-bottom: 30px;
+}
+
+div.ketiga h1 {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    /* mengubah position menjadi relative (non-static),
+    bergerak relatif terhadap posisi semualnya 
+    dan rung yang ditempati element terebut masih dianggap ada*/
+    position: relative;
+}

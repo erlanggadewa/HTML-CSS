@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak {
+            width: 300px;
+            height: 300px;
+            /* radial-gradient(<tipe> <jangkauan> at <position-y> <position-x>, (warna 1), (warna 2)) */
+            /* jangkauan =  closest-corner  = sudut terdekat
+                            closest-side    = sisi terdekat
+                            farthest-corner = sudut yang terjauh
+                            farthest-side   = sisi yang terjauh */
+            background: radial-gradient(circle closest-side at 100px 150px, red, green);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kotak"></div>
+</body>
+
+</html>

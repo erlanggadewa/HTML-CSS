@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* atas */
+        div.atas {
+            width: 50%;
+            height: 20%;
+            background-color: darkgreen;
+            /* auto kanan dan kiri menghasilkan element pindah ke tengah */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div.atas div.satu {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin-bottom: 50px;
+            /* membuat kotak 1 ketengah (margin auto tidak bisa berkerja pada top dan bottom)*/
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div.atas div.dua {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            /* akan naik dan overlapping dengan (div.atas div.satu) */
+            margin-top: -60px;
+        }
+
+        div.atas div.tiga {
+            width: 50px;
+            height: 50px;
+            background-color: chartreuse;
+        }
+
+        /* bawah */
+        div.bawah {
+            background-color: red;
+            width: 1000px;
+            height: 300px;
+            /* membuat block warna merah bergerak ke tengah */
+            margin: auto;
+
+        }
+
+        div.bawah div {
+            display: inline-block;
+            /* margin auto tidak berfungsi untuk inline block */
+            margin: auto;
+            /* turun 10px */
+            margin-top: 10px;
+        }
+
+        div.bawah div.a {
+            width: 200px;
+            height: 200px;
+            background-color: darkmagenta;
+
+        }
+
+        div.bawah div.b {
+            width: 100px;
+            height: 100px;
+            background-color: darkorange;
+        }
+
+        div.bawah div.c {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="atas">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+    </div>
+    <div class="bawah">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+    </div>
+</body>
+
+</html>

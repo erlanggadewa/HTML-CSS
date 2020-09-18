@@ -1,0 +1,18 @@
+body {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: center center;
+}
+
+body h1 {
+    color: blue;
+    font-size: 100px;
+    text-align: center;
+}
+
+body h3 {
+    font-size: 50px;
+    text-align: center;
+    color: red;
+}

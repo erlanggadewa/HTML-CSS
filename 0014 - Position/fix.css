@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.scroll {
+    height: 2000px;
+}
+
+div.pembungkus {
+    padding: 20px;
+    border: 7px solid black;
+    width: 800px;
+    margin: auto;
+    font-size: 30px;
+    line-height: 300px;
+    text-align: center;
+}
+
+div.pembungkus div.satu {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+div.pembungkus div.dua {
+    /* posisi fixed mengubah posisi relatif terhadap windows
+    dan jika kita scroll maka element yang dikenai posisi fixed
+    akan ikut bergerak, fixed digunakan pada bar website facebook*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    /*  */
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+
+div.pembungkus div.tiga {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+}

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTAINER 1 */
+div.container {
+    width: 800px;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    /* bisa menggunakan overflow untuk memanipulasi agar border container tidak runtuh */
+    overflow: auto;
+}
+
+div.container img {
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-right: 30px;
+}
+
+div.container p {
+    text-align: justify;
+}
+
+/* CONTAINER 2 */
+div.container2 {
+    width: 800px;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+/* untuk memanipulasi agar border container2 tidak runtuh */
+div.container2 div.clear {
+    /* menghapus float kiri */
+    clear: left;
+
+}
+
+div.container2 img {
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-right: 30px;
+}
+
+div.container2 p {
+    text-align: justify;
+}
+
+/* CONTAINER 3 */
+div.container3 {
+    width: 800px;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+div.container3 img {
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-right: 30px;
+}
+
+div.container3 p {
+    text-align: justify;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+    *zoom: 1;
+}

@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+
+/* 
+? filter : (tipe);
+    ! brightness (angka | %)
+    ! contrast (angka | %)
+    ! saturate (angka | %)
+    ! grayscale (angka | %)
+    ! sepia (angka | %)
+    ! hue-rotate (deg)
+    ! invert (angka | %)
+    ! opacity (angka | %)
+    ! drop-shadow (sama seperti drop shadow) 
+    */
+
+img {
+    filter: drop-shadow(5px 5px 5px black);
+}
