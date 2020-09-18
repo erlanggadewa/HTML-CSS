@@ -1,0 +1,58 @@
+/* 
+* transition :  [property] (durasi) [fungsi] [delay];
+? fungsi -->    ease        --> lambat diawal kemudian dipercepat dan melambat diakhir
+?               ease-in     --> dipercepat
+?               ease-out    --> diperlambat
+?               ease-in-out --> diperlambat diawal dan akhir
+?               linear      -->  normal
+?               cubic-brezier (w,x,y,z)
+*/
+
+.container {
+    margin: auto;
+    width: 900px;
+    border: solid 7px black;
+    text-align: center;
+    line-height: 100px;
+}
+
+.container:hover .kotak {
+    margin-left: 800px;
+    transform: rotate(360deg);
+}
+
+.container .kotak {
+    height: 100px;
+    width: 100px;
+    background-color: salmon;
+    margin: 20px 0;
+}
+
+.kotak1 {
+    transition: all 5s ease 0s;
+}
+
+.kotak2 {
+    transition: all 5s ease-in 0s;
+}
+
+.kotak3 {
+    transition: all 5s ease-out 0s;
+}
+
+.kotak4 {
+    transition: all 5s ease-in-out 0s;
+}
+
+.kotak5 {
+    transition: all 5s linear 0s;
+}
+
+.kotak6 {
+    transition: all 5s cubic-bezier(0.69, 2.19, 0.32, -0.71) 0s;
+}
+
+.kotak7 {
+    transition: all 5s cubic-bezier(0.69, 2.19, 0.32, -0.71) 0s,
+        transform 5s cubic-bezier(0.69, 2.19, 0.32, -0.71) 6s;
+}

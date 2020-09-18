@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotakBesar1 {
+            float: left;
+            background-color: rgb(255, 165, 0);
+            width: 300px;
+            height: 300px;
+            position: relative;
+            /* ketika menggunakan opacity, yang terjadi adalah semua element akan jadi transparan */
+            /* walaupun kotakKecil menggunakan opacity : 1; transparansi kotakKecil1 tetap mengikuti parentnya (0.5) */
+            opacity: 0.5;
+        }
+
+        .kotakKecil1 {
+            background-color: green;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            right: -75px;
+            bottom: -75px;
+            /* tidak berpengaruh dan akan mengikuti opacity parentnya */
+            opacity: 1;
+        }
+
+        .kotakBesar2 {
+            float: left;
+            left: 200px;
+            /* menggunakan RGBa yang terjadi sebenarnya adalah warnanya saja yang transparan , bukan elementnya */
+            /* sehingga kotakKecil2 tidak mengalami atau mengikuti transparensi parentnya */
+            background-color: rgba(255, 165, 0, 0.5);
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .kotakKecil2 {
+            background-color: green;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            right: -75px;
+            bottom: -75px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kotakBesar1">
+        <div class="kotakKecil1"></div>
+    </div>
+    <div class="kotakBesar2">
+        <div class="kotakKecil2"></div>
+    </div>
+
+</body>
+
+</html>

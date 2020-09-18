@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak {
+            background-color: seagreen;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            /* box-shadow: <inset> (x-offset px) (y-offset px) (blur px) <spread px> (color); */
+            box-shadow: inset 10px 10px 5px 10px red, inset 10px 10px 5px 20px blue;
+        }
+
+        .kotakHover {
+            background-color: yellow;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            transition: 1s;
+            box-shadow: 0 30px 10px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .kotakHover:hover {
+            background-color: yellow;
+            width: 300px;
+            height: 300px;
+            margin: 50px auto 1000px;
+            box-shadow: 0 80px 10px -30px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kotak"></div>
+    <div class="kotakHover"></div>
+    <p style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nam. Praesentium rem natus
+        modi saepe, deleniti
+        sed dolor perspiciatis quia doloremque excepturi voluptatibus asperiores expedita pariatur cum inventore a?
+        Modi, blanditiis soluta. Soluta consequatur nihil facere fuga aliquid eius eos velit itaque, eaque facilis animi
+        ullam excepturi laudantium accusantium laboriosam placeat. Cum mollitia corrupti libero, quasi debitis tenetur
+        reprehenderit porro! Deserunt ad eaque, tenetur molestiae ea, fugiat voluptatibus quod rem exercitationem
+        perferendis dignissimos reprehenderit sit et, aliquam eligendi facere? Est ea quaerat numquam nobis. Fugiat
+        animi est enim laboriosam repellat, velit in nisi repudiandae tenetur amet. Totam odio veniam corrupti.</p>
+</body>
+
+</html>

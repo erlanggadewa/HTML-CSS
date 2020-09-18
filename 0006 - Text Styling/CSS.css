@@ -1,0 +1,29 @@
+h1 {
+    /* mengatur ukuran text */
+    font-size: 150px;
+    /* mengatur warna */
+    color: red;
+    /* mengatur text hendak bersekutu kemana */
+    text-align: center;
+    /* mengatur banyangan text */
+    text-shadow: black 10px 10px 10px;
+    /* mengatur text dekrasi (underlan, line-through, dll) */
+    text-decoration: line-through;
+    /* mengatur dekorasi warna di text dekorasi */
+    text-decoration-color: yellow;
+    /* mengatur kapitalisasi pada text */
+    text-transform: capitalize;
+    /* mengatur jarak spasi antara satu huruf ke huruf lain */
+    letter-spacing: 20px;
+}
+
+p {
+    /* mengatur text hendak bersekutu kemana */
+    text-align: justify;
+    /* mengatur paragraf menjorok di awal */
+    text-indent: 100px;
+    /* mengatur efek kapitalisasi pada text */
+    text-transform: uppercase;
+    /* mengatur spasi antara kata dalam element text */
+    word-spacing: 30px;
+}

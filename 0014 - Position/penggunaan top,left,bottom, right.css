@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    height: 2000px;
+}
+
+.iklan {
+    /* iklan menggunakan posisis fixed agar iklan ikut waualupun kita scroll */
+    position: fixed;
+    background-color: yellowgreen;
+    /* berjarak 100px terhadap atas, bawah, kiri, kanan layar */
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    /* ----------------- */
+    /* memiliki transparansi 0.7 */
+    opacity: 0.7;
+}
+
+.iklan .close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: solid black 2px;
+    /* agar element close memiliki bentuk bundar */
+    border-radius: 100%;
+    /* berjarak negatif 15 terhadap atas dan kanan  */
+    right: -15px;
+    top: -15px;
+    /* -------------------------- */
+    text-align: center;
+    line-height: 30px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+    text-align: justify;
+}

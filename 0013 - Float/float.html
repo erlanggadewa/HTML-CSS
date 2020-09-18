@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div.container {
+            width: 800px;
+            /* height: 600px; */
+            background-color: aqua;
+            margin: auto;
+            /* container akan runtuh karena float bertipe out of flow, jika tidak ingin runtuh kita bisa menambahkan float left pada container */
+            border: 7px solid;
+            padding: 20px;
+
+
+        }
+
+        div.container div,
+        div.container img {
+            margin: auto;
+            /* memaksa element ke kiri dan keluar dari flow-nya */
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+            /* bukan 400px tetapi 360px karena sudah termakan padding atas 20px dan bawah 20px supaya tulisa tepat ditengah */
+            line-height: 360px;
+            text-align: center;
+
+        }
+
+        div.container img.block1 {
+            background-color: brown;
+            width: 150px;
+            height: 400px;
+
+        }
+
+        div.container div.block2 {
+            background-color: darkmagenta;
+            width: 500px;
+            height: 400px;
+        }
+
+        div.container div.block3 {
+            background-color: darkorange;
+            width: 150px;
+            height: 400px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo.png" alt="" class="block1">
+        <div class="block2">
+            <h1>2</h1>
+        </div>
+        <div class="block3">
+            <h1>3</h1>
+        </div>
+
+    </div>
+</body>
+
+</html>

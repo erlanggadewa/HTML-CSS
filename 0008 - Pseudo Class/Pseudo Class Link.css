@@ -1,0 +1,22 @@
+/* PSEUDO CLASS YANG BERHUBUNGAN DENGAN LINK */
+/* memberikan efek kepada link */
+.hello:link {
+    color: yellow;
+    font-size: 60px;
+}
+
+/* ketika mouse diarahkan ke element target akan memberikan efek yang kita setting */
+h1 .hello:hover {
+    /* menambahkan h1 di depan agar specifying nya meningkat */
+    color: green;
+}
+
+/* memberikan efek ketika kita kita melakukan aksi kepada element tersebut */
+.hello:active {
+    font-size: 100px;
+}
+
+/* memberikan efek ketika kita sudah mengunjungi element tersebut */
+.hello:visited {
+    color: blue;
+}

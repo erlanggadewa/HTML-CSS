@@ -1,0 +1,17 @@
+h1 {
+    /* mengatur jenis font yang akan digunakan */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* mengatur ukuran font */
+    font-size: 100px;
+    /* mengubah font menjadi small-caps */
+    font-variant: small-caps;
+    /* membuat font menjadi miring */
+    font-style: italic;
+}
+
+p {
+    /* mengatur jarak antar baris */
+    line-height: 50px;
+    /* mengatur ketebalan font */
+    font-weight: bold;
+}

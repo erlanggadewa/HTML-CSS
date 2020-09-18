@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.pembungkus {
+    margin: 20px auto;
+    width: 800px;
+    height: 1000px;
+    border: solid 7px black;
+    /* tidak peduli sebanyak apa indexnya, 
+    dan berposisi absolute jika parentnya memiliki position yang bersifat out-flow 
+    maka element yang bersifat absolute akan berpacu terhadap parentnya 
+    tanpa mensetting z-index */
+    position: relative;
+}
+
+div.pembungkus div.pertama {
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    background-color: violet;
+    position: absolute;
+    /* memiliki z-index 999 sehingga berada pada atas */
+    z-index: 999;
+    top: 10px;
+    left: 10px;
+}
+
+div.pembungkus div.kedua {
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    background-color: blue;
+    position: absolute;
+    /* memiliki z-index 1 sehingga berada pada bawah */
+    z-index: 1;
+    top: 85px;
+    left: 85px;
+}
+
+div.pembungkus div.ketiga {
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    background-color: red;
+    position: absolute;
+    /* memiliki z-index 200 sehingga berada pada tengah */
+    z-index: 200;
+    top: 160px;
+    left: 160px;
+}
