@@ -42,22 +42,24 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 #hero .container {
     height: 100vh;
     display: flex;
     align-items: center;
+    max-width: 1200px;
 }
 
 #hero .container .intro {
     color: white;
     position: relative;
-    font-size: 4.2rem;
-    margin-left: 160px;
+    font-size: 4rem;
     line-height: 2em;
     z-index: 1;
+    margin-left: 10rem;
+    /*background-color: blue;*/
 }
 
 
@@ -128,7 +130,7 @@ a {
 
 /* ! END HERO SECTION */
 
-/* ? KEYFRAMES */
+/* ! KEYFRAMES */
 
 @keyframes redCoverBox {
     50% {
@@ -162,4 +164,16 @@ a {
     }
 }
 
-/* ? END KEYFRAMES */
+/* ! END KEYFRAMES */
+
+@media (max-width : 768px) {
+    #hero .container .intro {
+        color: white;
+        position: relative;
+        font-size: 3rem;
+        margin-left: 5%;
+        line-height: 2em;
+        z-index: 1;
+        background-color: blue;
+    }
+}
