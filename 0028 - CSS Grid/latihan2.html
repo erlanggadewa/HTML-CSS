@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS GRID 1</title>
+    <title>CSS GRID 2</title>
     <style>
         .container {
             display: grid;
             margin: 50px auto;
-            grid-template-columns: 1fr 2fr 3fr;
-            grid-template-rows: 1fr 2fr;
+            /* mengubah yang implsit bukan row(default) akan tetapi jadi column */
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 2fr 3fr;
             /* untuk implisit */
-            grid-auto-rows: 3fr;
+            grid-auto-columns: 5fr;
             width: 60%;
         }
 

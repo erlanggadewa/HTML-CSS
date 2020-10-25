@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS GRID 1</title>
+    <title>CSS GRID 3</title>
     <style>
         .container {
             display: grid;
             margin: 50px auto;
-            grid-template-columns: 1fr 2fr 3fr;
-            grid-template-rows: 1fr 2fr;
-            /* untuk implisit */
-            grid-auto-rows: 3fr;
+            grid-template-columns: [awal] 1fr [kolom-2] 60% [kolom-3] 3fr [akhir];
+            grid-template-rows: [baris-awal] 1fr [baris-2] 2fr [baris-akhir];
+            grid-auto-rows: 200px;
             width: 60%;
         }
 
