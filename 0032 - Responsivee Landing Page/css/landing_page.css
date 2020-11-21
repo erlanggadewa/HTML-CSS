@@ -1,0 +1,48 @@
+body .navbar-fixed {
+  position: absolute;
+}
+
+body .navbar-fixed nav .nav-wrapper {
+  background-color: whitesmoke;
+}
+
+body .navbar-fixed nav .nav-wrapper .container .brand-logo img {
+  height: 30px;
+  padding-left: 20px;
+}
+
+body .navbar-fixed nav .nav-wrapper .container ul li a {
+  font-weight: bold;
+  color: #00BCD4;
+}
+
+body .home {
+  background-image: url("../img/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+body .home .container .row {
+  padding-top: 100px;
+}
+
+body .home .container .row .teks-kiri {
+  line-height: 1.7rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: whitesmoke;
+}
+
+body .home .container .row .teks-kiri h3 {
+  line-height: 1.2em;
+}
+
+body .home .container .row .teks-kiri h3 span {
+  text-align: center;
+}
+
+body .home .container .row .img-kanan img {
+  width: 100%;
+}
+/*# sourceMappingURL=landing_page.css.map */

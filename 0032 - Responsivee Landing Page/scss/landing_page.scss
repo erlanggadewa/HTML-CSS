@@ -1,0 +1,64 @@
+body {
+   .navbar-fixed {
+      position: absolute;
+
+      nav {
+         .nav-wrapper {
+            background-color: whitesmoke;
+
+            .container {
+               .brand-logo {
+                  img {
+                     height: 30px;
+                     padding-left: 20px;
+                  }
+               }
+
+               ul {
+                  li {
+                     a {
+                        font-weight: bold;
+                        color: #00BCD4;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .home {
+      background-image: url("../img/banner-bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+
+      .container {
+         .row {
+            padding-top: 100px;
+
+            .teks-kiri {
+               line-height: 1.7rem;
+               flex-wrap: wrap;
+               color: whitesmoke;
+               ;
+
+               h3 {
+                  line-height: 1.2em;
+
+                  span {
+                     text-align: center;
+                  }
+               }
+
+            }
+
+            .img-kanan {
+               img {
+                  width: 100%;
+               }
+            }
+         }
+      }
+   }
+}
