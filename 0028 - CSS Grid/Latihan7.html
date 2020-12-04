@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID 7</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .container {
+            margin: auto;
+            width: 80%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3, 25%);
+            gap: 10px;
+            background-color: grey;
+
+            /* SILAHKAN DICOBA-COBA PERBEDAANYA */
+            /* justify-items: start; */
+            justify-items: center;
+            /* justify-items: end; */
+            /* justify-items: stretch; */
+            /* justify-items: space-around; */
+            /* justify-items: space-between; */
+            /* justify-items: space-evenly; */
+
+            /* align-items: start; */
+            align-items: center;
+            /* align-items: end; */
+            /* align-items: stretch; */
+            /* align-items: space-around; */
+            /* align-items: space-between; */
+            /* align-items: space-evenly; */
+        }
+
+        .item {
+            width: 120px;
+            height: 120px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+
+</html>

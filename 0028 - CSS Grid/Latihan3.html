@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID 3</title>
+    <style>
+        .container {
+            display: grid;
+            margin: 50px auto;
+            grid-template-columns: [awal] 1fr [kolom-2] 60% [kolom-3] 3fr [akhir];
+            grid-template-rows: [baris-awal] 1fr [baris-2] 2fr [baris-akhir];
+            grid-auto-rows: 200px;
+            width: 60%;
+        }
+
+        .container .item {
+            background-color: aqua;
+            margin: 1px;
+        }
+
+        .container .item:nth-child(even) {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+
+</html>
