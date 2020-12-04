@@ -29,7 +29,7 @@ body .container .navbar {
           align-items: center;
 }
 
-body .container .navbar i {
+body .container .navbar #fixed {
   display: none;
 }
 
@@ -40,7 +40,7 @@ body .container .navbar h3 {
   font-size: 2rem;
 }
 
-body .container .navbar ul {
+body .container .navbar #list-item {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
@@ -48,7 +48,7 @@ body .container .navbar ul {
   gap: 10px;
 }
 
-body .container .navbar ul a {
+body .container .navbar #list-item a {
   display: -ms-grid;
   display: grid;
   height: 30px;
@@ -62,12 +62,12 @@ body .container .navbar ul a {
   transition: .4s ease;
 }
 
-body .container .navbar ul a:hover {
+body .container .navbar #list-item a:hover {
   background-color: white;
   color: black;
 }
 
-body .container .navbar ul a li {
+body .container .navbar #list-item a li {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -184,7 +184,7 @@ body .container .main .feature2 {
   body .container .navbar h3 {
     display: none;
   }
-  body .container .navbar ul {
+  body .container .navbar #list-item {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
@@ -205,25 +205,37 @@ body .container .main .feature2 {
             order: 1;
     margin: 10px 0;
   }
-  body .container .navbar i {
-    color: brown;
-    position: relative;
+  body .container .navbar #fixed {
+    -webkit-transition: 1s;
+    transition: 1s;
+    color: black;
+    position: absolute;
+    right: 60px;
     z-index: 999;
     display: block;
-    -ms-grid-column-align: right;
-        justify-self: right;
     font-size: 40px;
     -webkit-transition: .3s;
     transition: .3s;
     cursor: pointer;
   }
-  body .container .navbar i:hover {
+  body .container .navbar #fixed.fixedOn {
+    position: fixed;
+    color: white;
+  }
+  body .container .navbar #fixed.fixedOn:hover {
+    color: blanchedalmond;
+  }
+  body .container .navbar #fixed:hover {
     color: white;
   }
   body .container .navbar h3 {
     display: none;
   }
-  body .container .navbar ul {
+  body .container .navbar #list-item {
+    display: none;
+  }
+  body .container .navbar #list-item.toggleOn {
+    padding: 50px 0;
     background-color: black;
     display: -ms-grid;
     display: grid;
@@ -232,13 +244,13 @@ body .container .main .feature2 {
     -ms-flex-line-pack: distribute;
         align-content: space-around;
     gap: 10px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
   }
-  body .container .navbar ul a {
+  body .container .navbar #list-item a {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -246,7 +258,7 @@ body .container .main .feature2 {
     font-size: 3rem;
   }
   body .container .main {
-    margin-top: 0;
+    margin-top: 50px;
         grid-template-areas: 'hero hero' 'hero hero' 'feature1 feature1' 'feature2 feature2';
   }
 }

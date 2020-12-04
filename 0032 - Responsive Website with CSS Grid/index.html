@@ -15,9 +15,9 @@
 <body>
    <div class="container">
       <nav class="navbar">
-         <i class="fas fa-bars"></i>
+         <i id="fixed" class="fas fa-bars" onclick="myFunction(), fixedFunction()"></i>
          <h3>BRAIN WASH</h3>
-         <ul>
+         <ul id="list-item">
             <a href="">
                <li>Home</li>
             </a>
@@ -48,6 +48,17 @@
          </div>
       </div>
    </div>
+   <script>
+      function myFunction() {
+         var element = document.getElementById("list-item");
+         element.classList.toggle("toggleOn");
+      }
+
+      function fixedFunction() {
+         var element = document.getElementById("fixed");
+         element.classList.toggle("fixedOn");
+      }
+   </script>
 </body>
 
 </html>
