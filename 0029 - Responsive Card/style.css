@@ -1,6 +1,6 @@
 body {
     display: flex;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     height: 100vh;
     padding: 20px;
 }
@@ -9,7 +9,11 @@ body {
     margin: auto;
     width: 500px;
     height: 300px;
-    background-image: linear-gradient(135deg, rgb(10, 10, 114), rgb(137, 72, 243));
+    background-image: linear-gradient(
+        135deg,
+        rgb(10, 10, 114),
+        rgb(137, 72, 243)
+    );
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -65,7 +69,7 @@ body {
 
 /* RESPONSIVE */
 
-@media (max-width : 500px) {
+@media (max-width: 500px) {
     .card {
         height: 300px;
         transition: 0.5s;

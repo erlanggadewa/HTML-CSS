@@ -1,0 +1,16 @@
+body {
+    background-color: red;
+    h1 {
+        color: blue;
+    }
+    div {
+        .kotak {
+            color: aqua;
+        }
+        div {
+            h1.kotak {
+                color: black;
+            }
+        }
+    }
+}

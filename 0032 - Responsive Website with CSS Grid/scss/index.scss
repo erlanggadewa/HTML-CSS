@@ -1,241 +1,234 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
 }
 
 body {
-  background-color: rgb(167, 163, 163);
+    background-color: rgb(167, 163, 163);
 
-  .container {
-    display: grid;
-    margin: auto;
-    width: 80%;
-
-    .navbar {
-      margin-top: 50px;
-      margin-bottom: 30px;
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      align-items: center;
-
-      #fixed {
-        display: none;
-
-      }
-
-      h3 {
-        align-self: center;
-        font-size: 2rem;
-      }
-
-      #list-item {
+    .container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 10px;
+        margin: auto;
+        width: 80%;
 
-        a {
-          display: grid;
-          height: 30px;
-          width: 100%;
-          background-color: black;
-          color: white;
-          text-decoration: none;
-          list-style: none;
-          text-align: center;
-          transition: .4s ease;
+        .navbar {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            align-items: center;
 
-          &:hover {
-            background-color: white;
-            color: black;
-          }
+            #fixed {
+                display: none;
+            }
 
-          li {
-            align-self: center;
-          }
+            h3 {
+                align-self: center;
+                font-size: 2rem;
+            }
+
+            #list-item {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 10px;
+
+                a {
+                    display: grid;
+                    height: 30px;
+                    width: 100%;
+                    background-color: black;
+                    color: white;
+                    text-decoration: none;
+                    list-style: none;
+                    text-align: center;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+
+                    li {
+                        align-self: center;
+                    }
+                }
+            }
         }
-      }
+
+        .main {
+            order: 1;
+            display: grid;
+            grid-template-areas:
+                "hero hero feature1"
+                "hero hero feature2";
+            grid-template-columns: repeat(1fr);
+            grid-template-rows: 30vh 30vh;
+            gap: 5px;
+
+            .hero {
+                background-image: url(../img/2.jpg);
+                background-position: center;
+                background-size: cover;
+                grid-area: hero;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: white;
+                padding: 0 20px;
+
+                h3 {
+                    font-size: 2rem;
+                    padding: 5px;
+                    width: max-content;
+                    background-color: rgb(58, 58, 58);
+                }
+
+                p {
+                    padding: 5px;
+                    width: max-content;
+                    background-color: rgb(58, 58, 58);
+                }
+            }
+
+            .feature {
+                display: flex;
+                color: white;
+                text-shadow: 0px 0px 7 px rgb(0, 0, 0);
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h4 {
+                    font-size: 4rem;
+                    font-weight: 300;
+                }
+
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            .feature1 {
+                grid-area: feature1;
+                background-image: url(../img/1.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .feature2 {
+                grid-area: feature2;
+                background-image: url(../img/3.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
     }
-
-    .main {
-      order: 1;
-      display: grid;
-      grid-template-areas:
-        'hero hero feature1'
-        'hero hero feature2'
-      ;
-      grid-template-columns: repeat(1fr);
-      grid-template-rows: 30vh 30vh;
-      gap: 5px;
-
-      .hero {
-        background-image: url(../img/2.jpg);
-        background-position: center;
-        background-size: cover;
-        grid-area: hero;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: white;
-        padding: 0 20px;
-
-        h3 {
-          font-size: 2rem;
-          padding: 5px;
-          width: max-content;
-          background-color: rgb(58, 58, 58);
-        }
-
-        p {
-          padding: 5px;
-          width: max-content;
-          background-color: rgb(58, 58, 58);
-
-        }
-      }
-
-      .feature {
-
-        display: flex;
-        color: white;
-        text-shadow: 0px 0px 7 px rgb(0, 0, 0);
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        h4 {
-          font-size: 4rem;
-          font-weight: 300;
-        }
-
-        p {
-          font-size: 2rem;
-        }
-      }
-
-      .feature1 {
-        grid-area: feature1;
-        background-image: url(../img/1.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-
-      .feature2 {
-        grid-area: feature2;
-        background-image: url(../img/3.jpg);
-        background-position: center;
-        background-size: cover;
-      }
-    }
-
-  }
 }
 
 // ! Responsive Break Point
-@media only screen and (max-width : 1200px) {
-  body {
-    .container {
-      .navbar {
-        grid-template-columns: 1fr;
-        order: 2;
-        margin-top: 20px;
+@media only screen and (max-width: 1200px) {
+    body {
+        .container {
+            .navbar {
+                grid-template-columns: 1fr;
+                order: 2;
+                margin-top: 20px;
 
-        h3 {
-          display: none;
+                h3 {
+                    display: none;
+                }
+
+                #list-item {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                    gap: 10px;
+
+                    a {
+                    }
+                }
+            }
+
+            .main {
+                margin-top: 3rem;
+            }
         }
-
-        #list-item {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-          gap: 10px;
-
-          a {}
-        }
-      }
-
-      .main {
-        margin-top: 3rem;
-      }
     }
-  }
 }
 
-@media only screen and (max-width : 800px) {
-  body {
-    .container {
+@media only screen and (max-width: 800px) {
+    body {
+        .container {
+            .navbar {
+                grid-template-columns: 1fr;
+                order: 1;
+                margin: 10px 0;
 
-      .navbar {
-        grid-template-columns: 1fr;
-        order: 1;
-        margin: 10px 0;
+                #fixed {
+                    &.fixedOn {
+                        position: fixed;
+                        color: white;
 
-        #fixed {
-          &.fixedOn {
-            position: fixed;
-            color: white;
+                        &:hover {
+                            color: blanchedalmond;
+                        }
+                    }
 
-            &:hover {
-              color: blanchedalmond;
+                    transition: 1s;
+                    color: black;
+                    position: absolute;
+                    right: 60px;
+                    z-index: 999;
+                    display: block;
+                    font-size: 40px;
+                    transition: 0.3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                h3 {
+                    display: none;
+                }
+
+                #list-item {
+                    display: none;
+
+                    &.toggleOn {
+                        padding: 50px 0;
+                        background-color: black;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        align-content: space-around;
+                        gap: 10px;
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                    }
+
+                    a {
+                        height: max-content;
+                        width: 100%;
+                        font-size: 3rem;
+                    }
+                }
             }
-          }
 
-          transition: 1s;
-          color: black;
-          position: absolute;
-          right: 60px;
-          z-index: 999;
-          display: block;
-          font-size: 40px;
-          transition: .3s;
-          cursor: pointer;
-
-          &:hover {
-            color: white;
-          }
+            .main {
+                margin-top: 50px;
+                grid-template-areas:
+                    "hero hero"
+                    "hero hero"
+                    "feature1 feature1"
+                    "feature2 feature2";
+            }
         }
-
-        h3 {
-          display: none;
-        }
-
-        #list-item {
-          display: none;
-
-          &.toggleOn {
-            padding: 50px 0;
-            background-color: black;
-            display: grid;
-            grid-template-columns: 1fr;
-            align-content: space-around;
-            gap: 10px;
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-          }
-
-
-          a {
-            height: max-content;
-            width: 100%;
-            font-size: 3rem;
-          }
-        }
-      }
-
-      .main {
-        margin-top: 50px;
-        grid-template-areas:
-          'hero hero'
-          'hero hero'
-          'feature1 feature1'
-          'feature2 feature2'
-        ;
-      }
     }
-  }
 }
 
 // ! End of Responsive Break Point

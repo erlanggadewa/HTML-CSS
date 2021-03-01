@@ -1,0 +1,13 @@
+body {
+  background-color: red;
+}
+body h1 {
+  color: blue;
+}
+body div .kotak {
+  color: aqua;
+}
+body div div h1.kotak {
+  color: black;
+}
+/*# sourceMappingURL=wkwk.css.map */
