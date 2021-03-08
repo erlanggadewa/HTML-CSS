@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAGG,IAHC,CAGD,KAAK,CAAC;EAEH,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CAYf;;AAlBJ,AAQM,IARF,CAGD,KAAK,AAKD,QAAQ,CAAC;EACP,OAAO,EAAE,EAAE;EACX,QAAQ,EAAE,QAAQ;EAClB,gBAAgB,EAAE,yBAAyB;EAC3C,UAAU,EAAE,CAAC;EACb,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,eAAe,EAAE,OAAO;EACxB,iBAAiB,EAAE,SAAS;CAC9B",
-    "sources": [
-        "../scss/landing_page.scss"
-    ],
-    "names": [],
-    "file": "landing_page.css"
-}
